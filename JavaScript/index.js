@@ -67,5 +67,6 @@ function calculate(operation) {
         return;
     }
 
-    document.getElementById('result').innerText = "Result: " + result;
+    document.getElementById('result').innerText = "Answer: " + result;
 }
+
