@@ -43,7 +43,9 @@ function clearDisplay() {
 function calculate(operation) {
     let num1 = parseFloat(document.getElementById('num1').value);
     let num2 = parseFloat(document.getElementById('num2').value);
+    // the variables set above target the number fields that a user will enter
     let result;
+    // This variable here is set to undifined as it will later change depending on the operation
 
     if (isNaN(num1) || isNaN(num2)) {
         alert("Please enter valid numbers!");
