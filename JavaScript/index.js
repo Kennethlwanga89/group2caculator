@@ -75,3 +75,47 @@ function calculate(operation) {
 function refreshPage() {
     window.location.reload();
 }
+
+
+
+
+
+
+const form = document.getElementById('sampleForm');
+  const messageBox = document.getElementById('messageBox');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    messageBox.innerHTML = '';
+
+    const name = form.elements['name'].value;
+    const email = form.elements['email'].value;
+    const message = form.elements['message'].value;
+
+    if (!name || !email || !message) {
+      showMessage('Please fill in all fields.');
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      showMessage('Please enter a valid email address.');
+      return;
+    }
+
+    // Perform form submission or other actions here
+    showMessage('Form submitted successfully!');
+    form.reset();
+  });
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  function showMessage(message) {
+    const errorMessageElement = document.createElement('div');
+    errorMessageElement.id = 'error-message';
+    errorMessageElement.textContent = message;
+    messageBox.appendChild(errorMessageElement);
+  }
+});
