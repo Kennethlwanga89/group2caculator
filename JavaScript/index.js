@@ -69,3 +69,7 @@ function calculate(operation) {
 
     document.getElementById('result').innerText = "Answer: " + result;
 }
+
+function refreshPage() {
+    window.location.reload();
+}
