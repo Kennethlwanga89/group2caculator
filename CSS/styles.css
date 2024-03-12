@@ -1,17 +1,18 @@
 /* .calculator {
     width: auto;
-    margin: 50px auto;
+    margin-right: 350px; 
+    margin-left: 350px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    background-color: aqua;
+    background-color: rgb(36, 175, 175);
 }
 
 #display {
     font-size: 50px;
-    width: 100%;
+    width: 88%;
     margin-bottom: 10px;
-    padding: 50px;
+    padding: 35px;
 }
 
 .buttons {
@@ -21,8 +22,8 @@
 }
 
 button {
-    padding: 50px;
-    font-size: 50px;
+    padding: 25px;
+    font-size: 25px;
 }
  */
 
