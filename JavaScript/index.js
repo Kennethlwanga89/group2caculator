@@ -1,4 +1,4 @@
-let display = document.getElementById('display');
+/* let display = document.getElementById('display');
 let operator = '';
 let firstOperand = '';
 let secondOperand = '';
@@ -38,4 +38,34 @@ function clearDisplay() {
     operator = '';
     firstOperand = '';
     secondOperand = '';
+} */
+
+function calculate(operation) {
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+    let result;
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers!");
+        return;
+    }
+
+    if (operation === '+') {
+        result = num1 + num2;
+    } else if (operation === '-') {
+        result = num1 - num2;
+    } else if (operation === '*') {
+        result = num1 * num2;
+    } else if (operation === '/') {
+        if (num2 === 0) {
+            alert("Cannot divide by zero!");
+            return;
+        }
+        result = num1 / num2;
+    } else {
+        alert("Invalid operation!");
+        return;
+    }
+
+    document.getElementById('result').innerText = "Result: " + result;
 }
