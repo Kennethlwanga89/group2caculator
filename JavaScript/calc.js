@@ -81,7 +81,7 @@ function refreshPage() {
 
 
 
-const form = document.getElementById('sampleForm');
+/* const form = document.getElementById('sampleForm');
   const messageBox = document.getElementById('messageBox');
 
   form.addEventListener('submit', function (event) {
@@ -117,4 +117,4 @@ const form = document.getElementById('sampleForm');
     errorMessageElement.id = 'error-message';
     errorMessageElement.textContent = message;
     messageBox.appendChild(errorMessageElement);
-  }
+  } */
