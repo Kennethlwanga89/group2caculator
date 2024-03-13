@@ -8,32 +8,33 @@
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 
-<body>
+<body onload="document.form1.name.focus()">
     <ul>
         <li><a href="/index.html">Calculator</a></li>
     </ul>
 
     <div class="container">
         <h2>Sample Form</h2>
-        <form id="sampleForm">
+        <form id="sampleForm" name="form1">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="fname" >
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email" name="email">Email:</label>
+                <input type="email" id="email" name="email" >
             </div>
             <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" >
             </div>
-            <button type="submit">Submit</button>
+            <div class="form-group">
+                <button type="button" onclick="validateForm()">Submit</button>
+            </div>
         </form>
-        <div id="messageBox"></div>
+        <div id="msgBox"></div>
     </div>
-
-    <script src="/JavaScript/index.js"></script>
+    <script src="/JavaScript/form.js"></script>
 </body>
 
 </html>
