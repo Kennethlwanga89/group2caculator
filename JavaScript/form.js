@@ -23,6 +23,7 @@ function nameCheck(x){
 }
 // function for checking the email field if its correct
 function emailCheck(input){
+    //we create a patern variable 
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if(input.match(validRegex)){
         document.getElementById("msgBox").innerText = "email is okay";
