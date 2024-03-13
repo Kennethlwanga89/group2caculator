@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body onload="document.form1.name.focus()">
+    <header>
+        <h1 style="font-size:80px;">Group 2 Java Script</h1>
+    </header>
+    <div class="docWrap">
+        <div class="nav">
+            <a  class="buttons" href="/calc.html">
+                <div>Calculator</div>
+            </a>
+            <a  class="buttons" href="/form.html">
+                <div>Simple form</div>
+            </a>
+        </div>
+        <div class="body">
+            <div class="head">
+                <h2 style="font-size: 30px;"><b>Group 2 Calculator</b></h2>
+            </div>
+            <div class="content" style="padding: 0px;">
+                <div class="calculator">
+                    <input type="text" id="num1" placeholder="Enter 1st number">
+                    <input type="text" id="num2" placeholder="Enter 2nd number">
+                    <button onclick="calculate('+')">Add</button>
+                    <button onclick="calculate('-')">Subtract</button>
+                    <button onclick="calculate('*')">Multiply</button>
+                    <button onclick="calculate('/')">Divide</button>
+                    <button onclick="refreshPage()">Clear</button>
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/JavaScript/form.js"></script>
+        
+</body>
+</html>

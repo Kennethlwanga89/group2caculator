@@ -9,32 +9,45 @@
 </head>
 
 <body onload="document.form1.name.focus()">
-    <ul>
-        <li><a href="/index.html">Calculator</a></li>
-    </ul>
-
-    <div class="container">
-        <h2>Sample Form</h2>
-        <form id="sampleForm" name="form1">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="fname" >
+    <header>
+        <h1 style="font-size:80px;">Group 2 Java Script</h1>
+    </header>
+    <div class="docWrap">
+        <div class="nav">
+            <a  class="buttons" href="/calc.html">
+                <div>Calculator</div>
+            </a>
+            <a  class="buttons" href="/form.html">
+                <div>Simple form</div>
+            </a>
+        </div>
+        <div class="body">
+            <div class="head">
+                <h2 style="font-size: 30px;"><b>Group 2 Form</b></h2>
             </div>
-            <div class="form-group">
-                <label for="email" name="email">Email:</label>
-                <input type="email" id="email" name="email" >
+            <div class="content" style="padding: 0px;">
+                <form id="sampleForm" name="form1">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="fname" >
+                    </div>
+                    <div class="form-group">
+                        <label for="email" name="email">Email:</label>
+                        <input type="email" id="email" name="email" >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" >
+                    </div>
+                    <div class="form-group">
+                        <button id="submit" type="button" onclick="validateForm()" >Submit</button>
+                    </div>
+                    <div class="form-group" style="padding-left: 1.5rem;" id="msgBox"></div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" >
-            </div>
-            <div class="form-group">
-                <button type="button" onclick="validateForm()">Submit</button>
-            </div>
-        </form>
-        <div id="msgBox"></div>
+        </div>
     </div>
     <script src="/JavaScript/form.js"></script>
+        
 </body>
-
 </html>

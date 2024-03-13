@@ -110,3 +110,59 @@ button {
   #error-message {
     color: red;
   }
+
+  header{
+    text-align: center;
+    width: 100vw;
+    border-bottom: black solid;
+    color: #0056b3;
+  }
+  .nav{
+    padding-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .buttons{
+    margin: 0px 5px 5px 5px;
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .buttons:hover{
+    background-color: royalblue;
+  }
+  .body{
+    display:inline-flex;
+    flex-direction: column;
+    width: auto;
+    color: #013c7a;
+    padding-right: 50px;
+  }
+  .head{
+    text-align: left;
+    width: 100%;
+   }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .docWrap{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+  }
+  .form-group{
+    margin-left: 2rem;
+    width: 15rem;
+  }
+  #submit{
+    width: 16rem;
+  }
+  #msgBox{
+    display: inline-flex;
+    margin: 10px;
+    color: red;
+    font-weight: 100;
+  }
